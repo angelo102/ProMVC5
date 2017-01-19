@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Text;
+using System.Linq;
 using PROMVC5_Chapter4.Models;
 
 namespace PROMVC5_Chapter4.Controllers
@@ -136,6 +137,38 @@ namespace PROMVC5_Chapter4.Controllers
             }
 
             return View("Result", (object)result.ToString());
+        }
+
+        public ViewResult FindProducts()
+        {
+            Product[] products = {
+                new Product{Name="Kayak", Category="Watersoprts",Price=275M},
+                new Product{Name="Lifejacket", Category="Watersoprts",Price=48.95M},
+                new Product{Name="Soccer Ball", Category="Soccer",Price=19.50M},
+                new Product{Name="Corner Flag",Category="Soccer",Price=34.95M}
+            };
+
+            //var foundProducts = from match in products
+            //                    orderby match.Price descending
+            //                    select new { match.Name, match.Price };
+
+            var foundProducts = products.OrderByDescending(e => e.Price)
+                                .Take(3)
+                                .Select(e => new { e.Name, e.Price });
+
+            //int count = 0;
+            StringBuilder result = new StringBuilder();
+            foreach (var p in products)
+            {
+                result.AppendFormat("Price: {0} ", p.Price);
+                //if (++count ==3)
+                //{
+                //    break;
+                //}
+            }
+
+            return View("Result", (object)result.ToString());
+
         }
 
     }
