@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PROMVC5_Chapter4", "PROMVC5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor", "Razor\Razor.csproj", "{33086D2D-E5F3-49F4-B9DA-CAA833B13D28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EssentialTools", "EssentialTools\EssentialTools.csproj", "{2E920D09-3B07-4EA7-AF66-B348DD494869}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{33086D2D-E5F3-49F4-B9DA-CAA833B13D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33086D2D-E5F3-49F4-B9DA-CAA833B13D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33086D2D-E5F3-49F4-B9DA-CAA833B13D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E920D09-3B07-4EA7-AF66-B348DD494869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E920D09-3B07-4EA7-AF66-B348DD494869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E920D09-3B07-4EA7-AF66-B348DD494869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E920D09-3B07-4EA7-AF66-B348DD494869}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
